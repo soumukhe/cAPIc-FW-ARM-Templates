@@ -1,0 +1,135 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "virtualNetworkName": {
+      "value": "overlay-1"
+    },
+    "virtualNetworkRG": {
+      "value": "SM-MNSG-EastUS-RG"
+    },
+    "virtualNetworkNewOrExisting": {
+      "value": "existing"
+    },
+    "ManagementSubnet": {
+      "value": "100.64.254.0/24"
+    },
+    "ManagementName": {
+      "value": "asa-mgmt"
+    },
+    "ManagementStartAddress": {
+      "value": "100.64.254.100"
+    },
+    "DiagnosticPrefix": {
+      "value": "100.64.254.0/24"
+    },
+    "DiagnosticName": {
+      "value": "service-mgmt"
+    },
+    "DiagnosticStartAddress": {
+      "value": "100.64.254.100"
+    },
+    "UntrustPrefix": {
+      "value": "100.64.6.0/24"
+    },
+    "UntrustName": {
+      "value": "Firewall-Untrust"
+    },
+    "UntrustStartAddress": {
+      "value": "100.64.6.100"
+    },
+    "TrustPrefix": {
+      "value": "100.64.7.0/24"
+    },
+    "TrustName": {
+      "value": "Firewall-Trust"
+    },
+    "TrustStartAddress": {
+      "value": "100.64.7.100"
+    },
+    "adminUsername": {
+      "value": "soumukhe"
+    },
+    "adminPassword": {
+      "value": "superSekret1@!"
+    },
+    "sshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHxRrCjJ0p7FlB71+jeE4U2Gg+M/5QRe5wMWA2SSC9YGJGbndSuwbWjlO6RwYs+joFGe6YJnjGvQDVLgXKFvC+k9l5QKys+h8dqFdItpuGqI3VbijTZu/m/1dP+1UTK8ltJBTS9K1e6ZcIIJeSHGU9Ss3ZidcCaJUXqPszG5zKSlF8yVfLsSOD4XG3nkRcbGMbJyOoM7kD1BuQq1W/wqprSWY5jh/ks6YrVQN/qa1mJy/3A6HzBP2r7B7x8WDZ3OXH1bwzzw861MDmRPplcti0oOY1m+5biCOBfSCu5wpNcknBA6WkMLPfGTCCf40hj/xCx36rk1IAuc5NbZS8qbKt"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "vmName": {
+      "value": "FTDv"
+    },
+    "billingType": {
+      "value": "ftdv-azure-byol"
+    },
+    "softwareVersionByol": {
+      "value": "650115.0.0"
+    },
+    "softwareVersionPayg": {
+      "value": "650115.0.0"
+    },
+    "ftdHostname": {
+      "value": "smftdazceastus"
+    },
+    "ftdAdminPassword": {
+      "value": "C1oudT!ger"
+    },
+    "manageLocally": {
+      "value": "Yes"
+    },
+    "fmcDetails": {
+      "value": "Yes"
+    },
+    "fmcIp": {
+      "value": "1.1.1.1"
+    },
+    "fmcRegKey": {
+      "value": "cisco123"
+    },
+    "fmcNatId": {
+      "value": "1"
+    },
+    "storageAccountName": {
+      "value": "sm1011store"
+    },
+    "storageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "storageAccountNewOrExisting": {
+      "value": "existing"
+    },
+    "storageAccountRG": {
+      "value": "SM-MNSG-EastUS-RG"
+    },
+    "publicIPAddressName": {
+      "value": "sm-pub101-ip-stnd-asa-1"
+    },
+    "publicIPDnsLabel": {
+      "value": "sm-pub101-ip-stnd-ftd-10101"
+    },
+    "publicIPAllocationMethod": {
+      "value": "Static"
+    },
+    "publicIPsku": {
+      "value": "Standard"
+    },
+    "publicIPNewOrExisting": {
+      "value": "new"
+    },
+    "publicIPRG": {
+      "value": "SM-MNSG-EastUS-RG"
+    },
+    "vmSize": {
+      "value": "Standard_D3_v2"
+    },
+    "vmLargerSize": {
+      "value": "Standard_D3_v2"
+    }
+  }
+}

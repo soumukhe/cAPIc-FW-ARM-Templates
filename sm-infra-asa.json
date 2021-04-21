@@ -17,7 +17,7 @@
          }
       },
       "virtualNetworkRG":{
-         "defaultValue":"capic-azure",
+         "defaultValue":"cApic-Azure",
          "type":"string",
          "metadata":{
             "description":"Identifies whether to use new or existing virtual network"
@@ -158,13 +158,11 @@
       },
       "softwareVersion":{
          "type":"string",
-         "defaultValue":"914.1.0",
+         "defaultValue":"915.1.1",
          "allowedValues":[
-            "914.1.0",
-            "913.1.0",
-            "912.3.9",
-            "910.1.30",
-            "99.2.59"
+            "915.1.1",
+            "914.1.30",
+            "912.4.4"
          ],
          "metadata":{
             "description":"Software version to deploy."
@@ -172,7 +170,7 @@
       },
         "StorageAccountName": {
             "type": "string",
-            "defaultValue": "sm-east-asa-storage1",
+            "defaultValue": "smeastasastorage1",
             "metadata": {
                 "description": "Storage account name where VM files will be stored - used for both new and existing storage account."
             }
@@ -220,7 +218,7 @@
          }
       },
       "publicIPNewOrExisting":{
-         "defaultValue":"new",
+         "defaultValue":"existing",
          "allowedValues":[
             "new",
             "existing"
